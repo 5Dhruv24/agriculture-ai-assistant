@@ -11,9 +11,6 @@ crop information, weather information, and AI-based farming guidance.
 
 ## Technologies Used
 - Python
-- [your UI framework]
-- [your AI API]
-- [your weather API]
 
 ## How to Run
 
@@ -24,7 +21,13 @@ crop information, weather information, and AI-based farming guidance.
 
 ## Project Structure
 
-[brief explanation]
+1.Crop data 
+2.Mock weather data
+3.Home screen
+4.Crop Information screen
+5.Weather screen
+6.Ask AI screen
+7.Navigation and styling
 
 ## Future Scope
 
