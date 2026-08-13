@@ -132,11 +132,13 @@ class CropCompanionApp(tk.Tk):
         )
 
         style.configure(
+
             "Back.TButton",
             font=FONT_LABEL_BOLD,
             padding=6,
             background=SUBTEXT_COLOR,
             foreground="white",
+
         )
         style.map("Back.TButton", background=[("active", "#455A64")])
 
@@ -393,13 +395,13 @@ class WeatherScreen(tk.Frame):
         location = self.controller.selected_location.get().strip() or "Delhi"
         weather = WEATHER_DATA.get(location, DEFAULT_WEATHER)
 
-        self.title_label.config(text=f"🌦️ Weather — {location}")
+        self.title_label.config(text=f" Weather — {location}")
 
-        section_title(self.card, "📍 Current Conditions")
-        info_row(self.card, "🌡️ Temperature:", weather["temp"])
-        info_row(self.card, "☁️ Condition:", weather["condition"])
-        info_row(self.card, "💧 Humidity:", weather["humidity"])
-        info_row(self.card, "🌧️ Rain Probability:", f"{weather['rain_prob']}%")
+        section_title(self.card, " Current Conditions")
+        info_row(self.card, "Temperature:", weather["temp"])
+        info_row(self.card, " Condition:", weather["condition"])
+        info_row(self.card, " Humidity:", weather["humidity"])
+        info_row(self.card, " Rain Probability:", f"{weather['rain_prob']}%")
 
         # Dynamic advice logic
         rain_prob = weather["rain_prob"]
